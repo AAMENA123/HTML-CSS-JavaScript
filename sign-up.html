@@ -63,6 +63,16 @@ input {
 input:focus {
     border-bottom: 2px solid #000000; /* Border color on focus */
 }
+.input-group svg {
+    position: absolute;
+    left: 340px; /* Adjust icon position */
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgba(15, 11, 11, 0.7); /* Icon color */
+}
+input:focus + svg {
+    fill: #fff; /* Change icon color on focus */
+}
 
 ::placeholder {
     font-size: 14px; /* Adjust the placeholder size as needed */
@@ -114,16 +124,27 @@ p {
             <h3>Sign Up</h3>
             <form>
                 <div class="input-group">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" required><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                     </svg>
                 </div>
                 <div class="input-group">
                     <input type="email" placeholder="Email" required>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                      </svg>
                 </div>
                 <div class="input-group">
                     <input type="password" placeholder="Password (minimum 6 characters)" required>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                      </svg>
                 </div>
                 <div class="input-group">
                     <input type="password" placeholder="Confirm Password" required>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                      </svg>
                 </div>
                 <button type="submit">Create Account</button>
             </form>
